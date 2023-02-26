@@ -13,7 +13,6 @@ const productsRouter = express.Router();
 // })
 
 productsRouter.get("/products", async (req, res) => {
-    console.log("products")
     let result = await getAll();
         res.send(result)
     
